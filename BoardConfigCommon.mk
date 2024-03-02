@@ -78,11 +78,17 @@ TARGET_COPY_OUT_VENDOR := vendor
 BOARD_HAS_MTK_HARDWARE := true
 TARGET_BOARD_PLATFORM := mt6761
 
+# Properties
+TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
+
 # Recovery
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.mt6761
 
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := hardware/huawei/releasetools
+
+# SEPolicy
+BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 
 # VNDK
 PRODUCT_USE_VNDK_OVERRIDE := true

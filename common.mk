@@ -7,6 +7,10 @@
 ## Project ID Quota
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
+# Fastbootd
+PRODUCT_PACKAGES += \
+    fastbootd
+
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
