@@ -7,6 +7,15 @@
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
+# Ramdisk
+PRODUCT_PACKAGES += \
+    fstab.mt6761 \
+    init.connectivity.rc \
+    init.modem.rc \
+    init.mt6761.rc \
+    init.mt6761.usb.rc \
+    ueventd.mt6761.rc
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \

@@ -1,0 +1,16 @@
+on early-init
+    write /sys/class/net/ccmni0/queues/rx-0/rps_cpus "ff"
+    write /sys/class/net/ccmni1/queues/rx-0/rps_cpus "ff"
+    write /sys/class/net/ccmni2/queues/rx-0/rps_cpus "ff"
+    write /sys/class/net/ccmni0/queues/rx-0/rps_flow_cnt "1000"
+    write /sys/class/net/ccmni1/queues/rx-0/rps_flow_cnt "1000"
+    write /sys/class/net/ccmni2/queues/rx-0/rps_flow_cnt "1000"
+    setprop net.perf.tether.rps 0f
+    setprop net.perf.rps.default ff
+    setprop net.perf.tether.cpu.core 4,4,0,0
+    setprop net.perf.tether.cpu.freq 1183000,1638000,0,0
+    setprop net.perf.internal.cpu.core 4,4,0,0
+    setprop net.perf.internal.cpu.freq -1,-1,-1,-1
+
+on post-fs-data
+    setprop vold.post_fs_data_done 1

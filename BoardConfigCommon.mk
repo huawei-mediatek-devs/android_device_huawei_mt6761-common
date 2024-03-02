@@ -78,6 +78,9 @@ TARGET_COPY_OUT_VENDOR := vendor
 BOARD_HAS_MTK_HARDWARE := true
 TARGET_BOARD_PLATFORM := mt6761
 
+# Recovery
+TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.mt6761
+
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := hardware/huawei/releasetools
 
