@@ -78,6 +78,9 @@ TARGET_COPY_OUT_VENDOR := vendor
 BOARD_HAS_MTK_HARDWARE := true
 TARGET_BOARD_PLATFORM := mt6761
 
+# Releasetools
+TARGET_RELEASETOOLS_EXTENSIONS := hardware/huawei/releasetools
+
 # VNDK
 PRODUCT_USE_VNDK_OVERRIDE := true
 
