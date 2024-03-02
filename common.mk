@@ -6,7 +6,8 @@
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(LOCAL_PATH) \
+    hardware/huawei
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/huawei/mt6761-common/mt6761-common-vendor.mk)
