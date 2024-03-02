@@ -10,6 +10,7 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.mt6761 \
+    fstab.mt6761_ramdisk \
     init.connectivity.rc \
     init.modem.rc \
     init.mt6761.rc \

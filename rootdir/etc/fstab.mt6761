@@ -1,7 +1,7 @@
 # System / Vendor / ODM
-/dev/block/platform/bootdevice/by-name/system   /        ext4 ro wait,recoveryonly
-/dev/block/platform/bootdevice/by-name/vendor   /vendor  ext4 ro wait,recoveryonly
-/dev/block/platform/bootdevice/by-name/odm      /odm     ext4 ro wait,recoveryonly
+/dev/block/platform/bootdevice/by-name/system   /system  ext4 ro wait,first_stage_mount
+/dev/block/platform/bootdevice/by-name/vendor   /vendor  ext4 ro wait,first_stage_mount
+/dev/block/platform/bootdevice/by-name/odm      /odm     ext4 ro wait,first_stage_mount
 
 # Userdata / Cache
 /dev/block/platform/bootdevice/by-name/userdata /data    f2fs noatime,nosuid,nodev,discard,noflush_merge wait,check,quota,reservedsize=128M,resize
