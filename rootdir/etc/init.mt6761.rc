@@ -47,12 +47,16 @@ on late-init
 
 on fs
     # Mount everything
-    mount_all /vendor/etc/fstab.mt6761
+    mount_all /vendor/etc/fstab.mt6761 --early
 
     # Configure ZRAM
     write /sys/block/zram0/comp_algorithm lz4
     write /proc/sys/vm/page-cluster 0
     swapon_all /vendor/etc/fstab.mt6761
+
+on late-fs
+    # Mount RW partitions which need run fsck
+    mount_all /vendor/etc/fstab.mt6761 --late
 
 on post-fs
     # Performance tune
