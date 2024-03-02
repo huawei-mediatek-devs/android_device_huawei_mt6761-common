@@ -49,5 +49,8 @@ TARGET_KERNEL_ADDITIONAL_FLAGS := HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-l
 BOARD_HAS_MTK_HARDWARE := true
 TARGET_BOARD_PLATFORM := mt6761
 
+# VNDK
+PRODUCT_USE_VNDK_OVERRIDE := true
+
 # Inherit the proprietary files
 include vendor/huawei/mt6761-common/BoardConfigVendor.mk
