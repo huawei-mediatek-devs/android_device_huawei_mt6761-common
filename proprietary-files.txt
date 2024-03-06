@@ -112,7 +112,7 @@ vendor/lib64/vendor.mediatek.hardware.nvram@1.0.so
 vendor/lib64/vendor.mediatek.hardware.nvram@1.1.so
 
 # Trusted Execution Environment (TEE) - from MRD-LX1-user 9 HUAWEIMRD-LX1 412-OVS-LGRP2 release-keys
-etc/native_packages.xml|8c0f7a24d1013bb0661e067b8ed7d633a18a03d4
+etc/native_packages.bin|8c0f7a24d1013bb0661e067b8ed7d633a18a03d4
 lib/libhwtee_jni.so|ee9a0c5855234d9ac0175767c4f5fe252097f9a5
 lib/libc_secshared.so|d0b8786a475ec75359f27674296493ea0b4d681f
 lib/libtcis_ca.so|f2dcbe6a4974d56649eca595f101f4eeba771118
@@ -134,7 +134,7 @@ vendor/bin/fpkit_fpc_1511_ta.sec|94b2eaf866e514d27fc24a1d2a8b89a1a4f01082
 vendor/bin/fpkit_goodix_3658_ta.sec|199e6039c2382c25dbe3d5bb4f0fe1d550bfa809
 vendor/bin/fpkit_silead_6152B_ta.sec|ae1feb60dc79a058d2fbd456ad3b469a8f284b85
 vendor/bin/teecd|496fa3406985227c4ccd738fbad80dd225f10a4f
-vendor/etc/native_packages.xml|faeb94c0aa27d48d322590a7acd9fdd4dbef0758
+vendor/etc/native_packages.bin|faeb94c0aa27d48d322590a7acd9fdd4dbef0758
 vendor/etc/init/vendor.huawei.hardware.libteec@2.0-service.rc|56d653b0e7e8fb0b8eb3dd9ef79e319d182385a7
 vendor/lib/hw/vendor.huawei.hardware.libteec@2.0-impl.so|88390d1b8e1b6e55977d1397b7baeaac19e96775
 vendor/lib/libc_secshared.so|d0b8786a475ec75359f27674296493ea0b4d681f
