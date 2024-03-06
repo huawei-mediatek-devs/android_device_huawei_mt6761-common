@@ -7,6 +7,20 @@
 ## Project ID Quota
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
+# Display
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.allocator@2.0-impl \
+    android.hardware.graphics.allocator@2.0-service \
+    android.hardware.graphics.composer@2.2-service \
+    android.hardware.graphics.mapper@2.0-impl \
+    android.hardware.memtrack@1.0-service \
+    android.hardware.memtrack@1.0-impl
+
+PRODUCT_PACKAGES += \
+    libdrm \
+    libdrm.vendor \
+    libion
+
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd

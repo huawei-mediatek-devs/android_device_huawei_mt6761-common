@@ -1,2 +1,15 @@
+# Display
+ro.hardware.egl=mtk
+
 # Fastbootd
 ro.fastbootd.available=true
+
+# OpenGLES
+ro.opengles.version=196610
+
+# Picture Quality
+ro.vendor.mtk_pq_support=2
+ro.vendor.mtk_pq_color_mode=1
+
+# SurfaceFlinger
+debug.sf.disable_backpressure=1
