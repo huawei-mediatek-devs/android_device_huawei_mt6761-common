@@ -90,6 +90,9 @@ TARGET_RELEASETOOLS_EXTENSIONS := hardware/huawei/releasetools
 # SEPolicy
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 
+# Vintf
+DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
+
 # VNDK
 PRODUCT_USE_VNDK_OVERRIDE := true
 
