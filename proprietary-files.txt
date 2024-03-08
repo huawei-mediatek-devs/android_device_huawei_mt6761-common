@@ -160,6 +160,20 @@ vendor/etc/audio_param/Volume_AudioParam.xml|f9c6a50c80599aea945ecfa4fc2b2a5f5ad
 vendor/etc/audio_param/Volume_ParamUnitDesc.xml|dcf757d733f6a63eda40d2571cabc484972ffea6
 vendor/etc/aurisys_param/Speech_AudioParam.xml|19a8c1b21aa3072771ac7e4dc6d4185359ebf14f
 
+# Bluetooth
+vendor/lib/libbluetooth_hw_test.so
+vendor/lib/libbluetooth_mtk.so
+vendor/lib/libbluetooth_mtk_pure.so
+vendor/lib/libbluetooth_relayer.so
+vendor/lib/libbluetoothem_mtk.so
+vendor/lib/libbt-vendor.so
+vendor/lib64/libbluetooth_hw_test.so
+vendor/lib64/libbluetooth_mtk.so
+vendor/lib64/libbluetooth_mtk_pure.so
+vendor/lib64/libbluetooth_relayer.so
+vendor/lib64/libbluetoothem_mtk.so
+vendor/lib64/libbt-vendor.so
+
 # Display
 vendor/bin/hw/vendor.mediatek.hardware.dfps@1.0-service
 vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
