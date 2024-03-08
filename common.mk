@@ -31,6 +31,19 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fastbootd
 
+# Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@3.0-service
+
+PRODUCT_PACKAGES += \
+    libkeymaster3device.vendor \
+    libkeystore-engine-wifi-hidl \
+    libkeystore-wifi-hidl
+
+# Logging
+PRODUCT_PACKAGES += \
+    libxcollie
+
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 

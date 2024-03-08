@@ -83,6 +83,13 @@ vendor/etc/init/fuelgauged_init.rc|059d27cf33a84a559d45597be9f1f700dbb0d947
 vendor/etc/init/fuelgauged_nvram_init.rc|50d553439d88ac9ee006f5c3f8388f2911ecd38b
 vendor/lib/libfgauge_gm30.so|2167e0df61ea8425c5413f36d4819d30961ce429
 
+# Keymaster - from MRD-LX1-user 9 HUAWEIMRD-LX1 412-OVS-LGRP2 release-keys
+vendor/bin/hw/android.hardware.keymaster@3.0-service;MODULE=android.hardware.keymaster@3.0-service.huawei|5cb9191fc0fc24c9b58d9833433569edf3dfc454
+vendor/etc/init/android.hardware.keymaster@3.0-service.rc;MODULE=android.hardware.keymaster@3.0-service.huawei.rc|b0452f92b1f0ae823e928890a6e4ece25473e7be
+vendor/lib/hw/keystore.mt6761.so|a8b6c045439e777aa8705853180aca122c04279c
+vendor/lib/hw/android.hardware.keymaster@3.0-impl.so;MODULE=android.hardware.keymaster@3.0-impl-huawei.so|5d5e273d5388546248d2d92c39dfb1570e0609ea
+vendor/lib/libimonitor.so|26e36b8e02e0ed991d64b114a8666e04bb5a70ad
+
 # NVRAM
 vendor/bin/nvram_daemon
 vendor/etc/init/nvram_daemon.rc
