@@ -83,6 +83,11 @@ vendor/etc/init/fuelgauged_init.rc|059d27cf33a84a559d45597be9f1f700dbb0d947
 vendor/etc/init/fuelgauged_nvram_init.rc|50d553439d88ac9ee006f5c3f8388f2911ecd38b
 vendor/lib/libfgauge_gm30.so|2167e0df61ea8425c5413f36d4819d30961ce429
 
+# Gatekeeper - from MRD-LX1-user 9 HUAWEIMRD-LX1 412-OVS-LGRP2 release-keys
+vendor/bin/hw/android.hardware.gatekeeper@1.0-service;MODULE=android.hardware.gatekeeper@1.0-service.huawei|2e4a1aad553f65816c2daf35e72506f26c76d9cd
+vendor/etc/init/android.hardware.gatekeeper@1.0-service.rc;MODULE=android.hardware.gatekeeper@1.0-service.huawei.rc|14787a28eab3435381646dde6e92e6d286a69fe2
+vendor/lib/hw/gatekeeper.mt6761.so|d4d0de5ad84f478d882c76b06e761b1a3f0bd087
+
 # Keymaster - from MRD-LX1-user 9 HUAWEIMRD-LX1 412-OVS-LGRP2 release-keys
 vendor/bin/hw/android.hardware.keymaster@3.0-service;MODULE=android.hardware.keymaster@3.0-service.huawei|5cb9191fc0fc24c9b58d9833433569edf3dfc454
 vendor/etc/init/android.hardware.keymaster@3.0-service.rc;MODULE=android.hardware.keymaster@3.0-service.huawei.rc|b0452f92b1f0ae823e928890a6e4ece25473e7be
