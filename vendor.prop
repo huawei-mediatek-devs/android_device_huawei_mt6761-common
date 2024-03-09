@@ -31,3 +31,12 @@ ro.vendor.mtk_pq_color_mode=1
 # SurfaceFlinger
 debug.sf.disable_backpressure=1
 ro.surface_flinger.use_color_management=false
+
+# Wi-Fi
+persist.vendor.connsys.coredump.mode=2
+persist.vendor.connsys.chipid=-1
+persist.vendor.connsys.patch.version=-1
+persist.vendor.connsys.dynamic.dump=0
+ro.vendor.wlan.gen=gen4m
+vendor.connsys.driver.ready=no
+wifi.interface=wlan0
