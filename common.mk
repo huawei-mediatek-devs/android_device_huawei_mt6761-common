@@ -89,6 +89,10 @@ PRODUCT_PACKAGES += \
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
+PRODUCT_PACKAGES += \
+    TetheringResOverlayMT6761 \
+    WifiResOverlayMT6761
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.0.vendor \
