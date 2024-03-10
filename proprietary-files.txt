@@ -328,6 +328,16 @@ vendor/lib64/vendor.mediatek.hardware.nvram@1.1.so
 vendor/lib/vendor.mediatek.hardware.power@2.0.so
 vendor/lib64/vendor.mediatek.hardware.power@2.0.so
 
+# Sensors - from MRD-LX1-user 9 HUAWEIMRD-LX1 412-OVS-LGRP2 release-keys
+vendor/bin/hw/vendor.huawei.hardware.sensors@1.0-service|6e6e38760433dfd3b8ba7f603b606933327433d4
+vendor/etc/init/vendor.huawei.hardware.sensors@1.0-service.rc|d91b49dd3be52d0cbc94aab8566588c80d3eba26
+vendor/lib/hw/sensors.mt6761.so|f15aebb42e4bfbf843cc2a8d13f6fe8c01d9ddb7
+vendor/lib/hw/vendor.huawei.hardware.sensors@1.0-impl.so|6a0161f74293f6b80bf174ec9e0783c82f685ca1
+vendor/lib/lib_sensor_fac_interface.so|c2e5836f8e738a6cee4b37e55a45a61892402bf3
+vendor/lib/libksensor.so|47656cdd7a504b08e1683f19a618dfca753d9da0
+vendor/lib/libsensor_custom.so|1a7f039609d5935ec8f1d837fc9a04ae4067bc22
+vendor/lib/vendor.huawei.hardware.sensors@1.0.so|66975e0e3940a6ffabb7d81866fab90ffb005ed6
+
 # Trusted Execution Environment (TEE) - from MRD-LX1-user 9 HUAWEIMRD-LX1 412-OVS-LGRP2 release-keys
 etc/native_packages.bin|8c0f7a24d1013bb0661e067b8ed7d633a18a03d4
 lib/libhwtee_jni.so|ee9a0c5855234d9ac0175767c4f5fe252097f9a5
