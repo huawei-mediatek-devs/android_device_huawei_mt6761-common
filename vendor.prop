@@ -23,6 +23,7 @@ ro.fastbootd.available=true
 
 # Media (OMX)
 debug.stagefright.ccodec=0
+media.stagefright.thumbnail.prefer_hw_codecs=true
 vendor.mtk.vdec.waitkeyframeforplay=1
 
 # OpenGLES
