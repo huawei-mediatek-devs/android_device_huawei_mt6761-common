@@ -277,6 +277,14 @@ vendor/bin/hw/android.hardware.gatekeeper@1.0-service;MODULE=android.hardware.ga
 vendor/etc/init/android.hardware.gatekeeper@1.0-service.rc;MODULE=android.hardware.gatekeeper@1.0-service.huawei.rc|14787a28eab3435381646dde6e92e6d286a69fe2
 vendor/lib/hw/gatekeeper.mt6761.so|d4d0de5ad84f478d882c76b06e761b1a3f0bd087
 
+# GPS - from MRD-LX1-user 9 HUAWEIMRD-LX1 412-OVS-LGRP2 release-keys
+vendor/bin/hw/vendor.mediatek.hardware.gnss@1.1-service|0edfb78f46b48a27afeb72478eca409fe4d7c6c5
+vendor/etc/init/vendor.mediatek.hardware.gnss@1.1-service.rc|4567a91c1fc536624580659de02526a3a1bacd50
+vendor/etc/agps_profiles_conf2.xml|e37b0efb80fe7705975538d5debfff9bf7f4f06d
+vendor/lib/hw/gps.mt6761.so|b24ddce1b581046f14d0c28567cf3e5ff69b3f89
+vendor/lib/hw/vendor.mediatek.hardware.gnss@1.1-impl.so|f9176dbf8eb2fc24f0a09bdcced79758cca90063
+vendor/lib/vendor.mediatek.hardware.gnss@1.1.so|a3f83e0af17928aabd1ba9ce2d1bd846ef83c029
+
 # Keymaster - from MRD-LX1-user 9 HUAWEIMRD-LX1 412-OVS-LGRP2 release-keys
 vendor/bin/hw/android.hardware.keymaster@3.0-service;MODULE=android.hardware.keymaster@3.0-service.huawei|5cb9191fc0fc24c9b58d9833433569edf3dfc454
 vendor/etc/init/android.hardware.keymaster@3.0-service.rc;MODULE=android.hardware.keymaster@3.0-service.huawei.rc|b0452f92b1f0ae823e928890a6e4ece25473e7be
