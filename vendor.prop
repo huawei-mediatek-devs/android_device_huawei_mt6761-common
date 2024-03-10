@@ -22,6 +22,7 @@ ro.hardware.egl=mtk
 ro.fastbootd.available=true
 
 # Media (OMX)
+debug.stagefright.ccodec=0
 vendor.mtk.vdec.waitkeyframeforplay=1
 
 # OpenGLES
