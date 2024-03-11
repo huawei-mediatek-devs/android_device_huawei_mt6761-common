@@ -71,6 +71,10 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.2.vendor \
     android.hardware.drm-service.clearkey
 
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full-v29 \
+    libprotobuf-cpp-lite-v29
+
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
