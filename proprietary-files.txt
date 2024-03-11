@@ -369,7 +369,6 @@ vendor/etc/init/init.thermal_manager.rc|764c19af5e285345a9fd5b75131fa9588b609d62
 vendor/etc/init/init.thermalloadalgod.rc|d70cde3b8a1a1607f7a99475b3357a894907458f
 vendor/etc/.tp/thermal.conf|8d3b959b36ce55f931e5b0f474180f6e4e097201
 vendor/etc/.tp/thermal.off.conf|94e49bae124a583bfb301588891bca50567ceea7
-vendor/lib/hw/thermal.mt6761.so|03900e959b37f599a0dc67432f60ba30944b24af
 vendor/lib/libifcutils_mtk.so|005c73f92ab613a8cf37f621f0268943d15366df
 vendor/lib/libmtcloader.so|0939c863c3fadd8be072a50091b6a7d99cc58b8a
 vendor/lib/libthermalalgo.so|7ef4fbbe67ddf2929aec83e2ffeb53ab61133b00
