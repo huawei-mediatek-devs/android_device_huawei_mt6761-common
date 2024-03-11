@@ -28,6 +28,7 @@
 /dev/block/platform/bootdevice/by-name/nvcfg     /mnt/vendor/nvcfg ext4 noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc wait,check,formattable
 /dev/block/platform/bootdevice/by-name/persist   /mnt/vendor/persist ext4 noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc wait,check,formattable
 /dev/block/platform/bootdevice/by-name/seccfg    /seccfg emmc defaults defaults
+/dev/block/platform/bootdevice/by-name/oeminfo   /oeminfo emmc defaults first_stage_mount
 
 # Firmware
 /dev/block/platform/bootdevice/by-name/lk       /bootloader emmc defaults defaults

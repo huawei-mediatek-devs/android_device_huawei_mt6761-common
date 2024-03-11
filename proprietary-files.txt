@@ -371,6 +371,16 @@ vendor/lib64/libnvramagentclient.so
 vendor/lib64/vendor.mediatek.hardware.nvram@1.0.so
 vendor/lib64/vendor.mediatek.hardware.nvram@1.1.so
 
+# OEMInfo - from MRD-LX1-user 9 HUAWEIMRD-LX1 412-OVS-LGRP2 release-keys
+vendor/bin/oeminfo_nvm_server|5c77bc7d4b6e5ff06f3ca51773d363338f14fac9
+vendor/lib/libBootloaderOeminfo.so|94b5a4e9d12578ebf9608dc4146996af54981fa7
+vendor/lib/lib_device_interface.so|1e35a1590a53e3aa42009a954ac3987061e04d00
+vendor/lib/lib_factory_interface.so|4845808a6e5bf0d87f4c71d092ce0ad63538a607
+vendor/lib/lib_mmi_interface.so|09390cd0f96b2e52e7c53b017c184b10951ebfd3
+vendor/lib/libhuaweicust.so|8cad489b8e96f5aff47a539aa4a4657ebbc98b2b
+vendor/lib/libnvme.so|62da20f85d43971033b165c7ec3b871723eb4bdb
+vendor/lib/liboeminfo.so|eb4ef05b5dddb7ec6c48badcc429da7ecb8a6ae3
+
 # Power
 vendor/lib/vendor.mediatek.hardware.power@2.0.so
 vendor/lib64/vendor.mediatek.hardware.power@2.0.so

@@ -566,6 +566,10 @@ on post-fs-data
     write /sys/power/pm_async 0
 
 on boot
+    # Oeminfo
+    chmod 0666 /dev/socket/oeminfo_nvm
+    chown system system /dev/socket/oeminfo_nvm
+
     # VM
     write /proc/sys/vm/dirty_writeback_centisecs 300
 
@@ -864,3 +868,8 @@ on property:persist.vendor.mediatek.fg.log.enable=1
     write /sys/devices/platform/battery_meter/FG_daemon_log_level 7
     write /sys/bus/platform/devices/battery/FG_daemon_log_level 7
     write /proc/sys/kernel/printk 8
+
+service oeminfo_nvm /vendor/bin/oeminfo_nvm_server
+    class core
+    group system readproc root
+    ioprio rt 4
