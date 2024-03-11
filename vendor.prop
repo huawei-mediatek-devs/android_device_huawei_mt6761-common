@@ -37,6 +37,53 @@ ro.opengles.version=196610
 ro.vendor.mtk_pq_support=2
 ro.vendor.mtk_pq_color_mode=1
 
+# Radio
+persist.vendor.radio.data.oem_fd_support=1
+persist.vendor.radio.data.oem_temp_data_switch=1
+persist.vendor.radio.data.oem_wifi_support_apn=1
+persist.vendor.radio.data.status_service=1
+persist.vendor.radio.fd.counter=150
+persist.vendor.radio.fd.off.counter=50
+persist.vendor.radio.fd.off.r8.counter=50
+persist.vendor.radio.fd.r8.counter=150
+persist.vendor.radio.flashless.fsm=0
+persist.vendor.radio.flashless.fsm_cst=0
+persist.vendor.radio.flashless.fsm_rw=0
+persist.vendor.radio.msimmode=dsds
+persist.vendor.radio.mtk_dsbp_support=1
+persist.vendor.radio.mtk_ps2_rat=L/W/G
+persist.vendor.radio.mtk_ps3_rat=G
+persist.vendor.radio.smart.data.switch=1
+ril.external.md=0
+ro.telephony.default_network=10,10
+ro.vendor.md_prop_ver=1
+ro.vendor.mtk_embms_support=1
+ro.vendor.mtk_external_sim_only_slots=0
+ro.vendor.mtk_md_world_mode_support=1
+ro.vendor.mtk_protocol1_rat_config=C/Lf/Lt/W/T/G
+ro.vendor.mtk_ril_mode=c6m_1rild
+ro.vendor.mtk_single_bin_modem_support=1
+ro.vendor.mtk_world_phone_policy=0
+ro.vendor.num_md_protocol=2
+ro.vendor.sim_me_lock_mode=0
+telephony.lteOnCdmaDevice=1
+
+# Radio (IMS)
+persist.vendor.ims_support=1
+persist.vendor.mims_support=2
+persist.vendor.mtk_ct_volte_support=2
+persist.vendor.mtk.volte.enable=1
+persist.vendor.mtk_dynamic_ims_switch=1
+persist.vendor.mtk_wfc_support=1
+persist.vendor.radio.ims.default_apn=1
+persist.vendor.vilte_support=1
+persist.vendor.viwifi_support=1
+persist.vendor.volte_support=1
+persist.vendor.vt.data_simulate=0
+persist.vendor.vt.rotate_delay=500
+ro.vendor.md_auto_setup_ims=1
+ro.vendor.mtk_data_config=1
+
 # SurfaceFlinger
 debug.sf.disable_backpressure=1
 ro.surface_flinger.use_color_management=false

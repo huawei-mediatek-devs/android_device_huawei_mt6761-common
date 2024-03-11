@@ -133,6 +133,15 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.1.vendor \
     android.hardware.power@1.2.vendor
 
+# Radio
+PRODUCT_PACKAGES += \
+    android.hardware.radio@1.0.vendor:32 \
+    android.hardware.radio@1.1.vendor:32 \
+    android.hardware.radio@1.2.vendor:32 \
+    android.hardware.radio@1.6.vendor:32 \
+    android.hardware.radio.config@1.3.vendor:32 \
+    android.hardware.radio.deprecated@1.0.vendor:32
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.mt6761 \

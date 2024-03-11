@@ -109,6 +109,33 @@
         <fqname>@1.0::IOmxStore/default</fqname>
     </hal>
     <hal format="hidl">
+        <name>android.hardware.radio</name>
+        <transport>hwbinder</transport>
+        <version>1.2</version>
+        <interface>
+            <name>IRadio</name>
+            <instance>imsrild1</instance>
+            <instance>imsrild2</instance>
+            <instance>se1</instance>
+            <instance>se2</instance>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+        </interface>
+        <interface>
+            <name>ISap</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+        </interface>
+        <fqname>@1.2::IRadio/imsrild1</fqname>
+        <fqname>@1.2::IRadio/imsrild2</fqname>
+        <fqname>@1.2::IRadio/se1</fqname>
+        <fqname>@1.2::IRadio/se2</fqname>
+        <fqname>@1.2::IRadio/slot1</fqname>
+        <fqname>@1.2::IRadio/slot2</fqname>
+        <fqname>@1.2::ISap/slot1</fqname>
+        <fqname>@1.2::ISap/slot2</fqname>
+    </hal>
+    <hal format="hidl">
         <name>android.hardware.sensors</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -142,6 +169,18 @@
             <instance>default</instance>
         </interface>
         <fqname>@2.0::ILibteecGlobal/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.huawei.hardware.radio</name>
+        <transport>hwbinder</transport>
+        <version>2.0</version>
+        <interface>
+            <name>IRadio</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+        </interface>
+        <fqname>@2.0::IRadio/slot1</fqname>
+        <fqname>@2.0::IRadio/slot2</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.huawei.hardware.sensors</name>
@@ -192,5 +231,47 @@
             <instance>default</instance>
         </interface>
         <fqname>@2.2::IPictureQuality/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.mediatek.hardware.radio_ex</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IMtkRadio</name>
+            <instance>mtk_ims_slot1</instance>
+            <instance>mtk_ims_slot2</instance>
+            <instance>mtk_se1</instance>
+            <instance>mtk_se2</instance>
+            <instance>mtk_slot1</instance>
+            <instance>mtk_slot2</instance>
+        </interface>
+        <fqname>@1.0::IMtkRadio/mtk_ims_slot1</fqname>
+        <fqname>@1.0::IMtkRadio/mtk_ims_slot2</fqname>
+        <fqname>@1.0::IMtkRadio/mtk_se1</fqname>
+        <fqname>@1.0::IMtkRadio/mtk_se2</fqname>
+        <fqname>@1.0::IMtkRadio/mtk_slot1</fqname>
+        <fqname>@1.0::IMtkRadio/mtk_slot2</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.mediatek.hardware.radio_radar</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IRadioRadar</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+        </interface>
+        <fqname>@1.0::IRadioRadar/slot1</fqname>
+        <fqname>@1.0::IRadioRadar/slot2</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.mediatek.hardware.videotelephony</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IVideoTelephony</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::IVideoTelephony/default</fqname>
     </hal>
 </manifest>
