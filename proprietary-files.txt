@@ -32,7 +32,6 @@ vendor/lib/libgpu_aux.so
 vendor/lib/libgralloc_extra.so
 vendor/lib/libion_mtk.so
 vendor/lib/libion_ulit.so
-vendor/lib/libladder.so
 vendor/lib/libmemtrack_GL.so
 vendor/lib/libpq_cust_base.so
 vendor/lib/libpq_prot.so
@@ -66,7 +65,6 @@ vendor/lib64/libgpu_aux.so
 vendor/lib64/libgralloc_extra.so
 vendor/lib64/libion_mtk.so
 vendor/lib64/libion_ulit.so
-vendor/lib64/libladder.so
 vendor/lib64/libmemtrack_GL.so
 vendor/lib64/libpq_cust_base.so
 vendor/lib64/libpq_prot.so
@@ -98,6 +96,10 @@ vendor/etc/init/android.hardware.keymaster@3.0-service.rc;MODULE=android.hardwar
 vendor/lib/hw/keystore.mt6761.so|a8b6c045439e777aa8705853180aca122c04279c
 vendor/lib/hw/android.hardware.keymaster@3.0-impl.so;MODULE=android.hardware.keymaster@3.0-impl-huawei.so|5d5e273d5388546248d2d92c39dfb1570e0609ea
 vendor/lib/libimonitor.so|26e36b8e02e0ed991d64b114a8666e04bb5a70ad
+
+# Ladder - from ares-user 13 TP1A.220624.014 V14.0.2.0.TKJCNXM release-keys
+vendor/lib/libladder.so|ab3c533149a4e7706e9027b1a0fe72fc12bfdf24
+vendor/lib64/libladder.so|a70bf660f2d5ff2af59cd74cadf49081539bb95f
 
 # NVRAM
 vendor/bin/nvram_daemon
