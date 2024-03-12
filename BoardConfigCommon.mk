@@ -50,6 +50,9 @@ BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 product.type=normal androidboot.s
 BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x11a88000 --second_offset 0x00e88000 --tags_offset 0x07808000 --header_version 1
 
+# Build System
+BUILD_BROKEN_DUP_RULES := true
+
 # Filesystems
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_ODMIMAGE_FILE_SYSTEM_TYPE := ext4
