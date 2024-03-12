@@ -52,6 +52,7 @@ BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x11a88000 -
 
 # Build System
 BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
 # Filesystems
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
