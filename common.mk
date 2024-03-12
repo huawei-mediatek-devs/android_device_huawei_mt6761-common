@@ -93,6 +93,10 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-lite-v29 \
     libprotobuf-cpp-lite-3.9.1-vendorcompat
 
+# Dynamic Partitions
+PRODUCT_RETROFIT_DYNAMIC_PARTITIONS := true
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
