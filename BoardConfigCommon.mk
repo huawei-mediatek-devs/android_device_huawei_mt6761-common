@@ -32,6 +32,7 @@ BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 product.type=normal androidboot.s
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x11a88000 --second_offset 0x00e88000 --tags_offset 0x07808000 --header_version 1
 
 # Platform
+BOARD_HAS_MTK_HARDWARE := true
 TARGET_BOARD_PLATFORM := mt6761
 
 # Inherit the proprietary files
