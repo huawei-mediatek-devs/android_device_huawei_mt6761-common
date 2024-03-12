@@ -73,7 +73,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-v29 \
-    libprotobuf-cpp-lite-v29
+    libprotobuf-cpp-lite-v29 \
+    libprotobuf-cpp-lite-3.9.1-vendorcompat
 
 # Fastbootd
 PRODUCT_PACKAGES += \
