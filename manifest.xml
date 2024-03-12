@@ -27,6 +27,16 @@
         </interface>
     </hal>
     <hal format="hidl">
+        <name>android.hardware.camera.provider</name>
+        <transport>hwbinder</transport>
+        <version>2.4</version>
+        <interface>
+            <name>ICameraProvider</name>
+            <instance>internal/0</instance>
+        </interface>
+        <fqname>@2.4::ICameraProvider/internal/0</fqname>
+    </hal>
+    <hal format="hidl">
         <name>android.hardware.gatekeeper</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -161,6 +171,36 @@
         <fqname>@1.2::ISupplicant/default</fqname>
     </hal>
     <hal format="hidl">
+        <name>vendor.huawei.hardware.camera.camResource</name>
+        <transport>hwbinder</transport>
+        <version>1.1</version>
+        <interface>
+            <name>IHwCameraResourceService</name>
+            <instance>huawei.cameraresource.service</instance>
+        </interface>
+        <fqname>@1.1::IHwCameraResourceService/huawei.cameraresource.service</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.huawei.hardware.camera.cfgsvr</name>
+        <transport>hwbinder</transport>
+        <version>1.1</version>
+        <interface>
+            <name>IHwCamCfgSvr</name>
+            <instance>huawei.camera.cfgsvr</instance>
+        </interface>
+        <fqname>@1.1::IHwCamCfgSvr/huawei.camera.cfgsvr</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.huawei.hardware.camera.factory</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ICameraFactory</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::ICameraFactory/default</fqname>
+    </hal>
+    <hal format="hidl">
         <name>vendor.huawei.hardware.libteec</name>
         <transport>hwbinder</transport>
         <version>2.0</version>
@@ -191,6 +231,16 @@
             <instance>default</instance>
         </interface>
         <fqname>@1.0::ISensors/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.mediatek.hardware.camera.ccap</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ICCAPControl</name>
+            <instance>internal/0</instance>
+        </interface>
+        <fqname>@1.0::ICCAPControl/internal/0</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.mediatek.hardware.dfps</name>

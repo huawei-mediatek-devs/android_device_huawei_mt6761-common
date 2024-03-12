@@ -15,6 +15,13 @@ bluetooth.profile.pbap.server.enabled?=true
 bluetooth.profile.sap.server.enabled?=true
 ro.bt.bdaddr_path=/data/vendor/bluedroid/macbt
 
+# Camera
+ro.camera.sound.forced=0
+vendor.camera.mdp.cz.enable=1
+vendor.mtkcamapp.cshot.platform=-1
+ro.vendor.camera3.zsl.default=140
+vendor.camera.mdp.dre.enable=0
+
 # Display
 ro.hardware.egl=mtk
 
