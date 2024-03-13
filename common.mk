@@ -21,6 +21,9 @@ PRODUCT_PACKAGES += \
     libdrm.vendor \
     libion
 
+PRODUCT_PACKAGES += \
+    libutils-v32
+
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
