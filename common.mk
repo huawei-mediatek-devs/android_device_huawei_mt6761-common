@@ -48,6 +48,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.recovery.mt6761.rc:$(TARGET_RECOVERY_OUT)/root/init.recovery.mt6761.rc
 
+# Shims
+PRODUCT_PACKAGES += \
+    libbase_shim
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \

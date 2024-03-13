@@ -66,6 +66,9 @@ function blob_fixup() {
         vendor/lib*/hw/vendor.mediatek.hardware.pq@2.2-impl.so)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
             ;;
+        vendor/lib*/libnvram.so)
+            "${PATCHELF}" --add-needed "libbase_shim.so" "${2}"
+            ;;
     esac
 }
 
