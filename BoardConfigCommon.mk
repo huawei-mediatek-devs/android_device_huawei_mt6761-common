@@ -144,6 +144,7 @@ TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
 # Recovery
 BOARD_USES_FULL_RECOVERY_IMAGE := true
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.mt6761
+TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_huawei
 
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := hardware/huawei/releasetools
