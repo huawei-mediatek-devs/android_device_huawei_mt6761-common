@@ -18,6 +18,9 @@ ro.bt.bdaddr_path=/data/vendor/bluedroid/macbt
 # Display
 ro.hardware.egl=mtk
 
+# DRM
+drm.service.enabled=true
+
 # Fastbootd
 ro.fastbootd.available=true
 

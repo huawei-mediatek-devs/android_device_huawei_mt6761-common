@@ -65,6 +65,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     disable_configstore
 
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.1.vendor \
+    android.hardware.drm@1.2.vendor \
+    android.hardware.drm@1.4-service.clearkey
+
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
