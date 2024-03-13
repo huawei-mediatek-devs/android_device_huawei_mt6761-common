@@ -60,6 +60,9 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+        lib*/vendor.huawei.hardware.libteec@2.0.so)
+            "${PATCHELF}" --add-needed "libhidlbase_shim.so" "${2}"
+            ;;
         vendor/bin/hw/wpa_supplicant)
             "${PATCHELF}" --add-needed "libcompiler_rt-v29.so" "${2}"
             ;;
@@ -81,6 +84,99 @@ function blob_fixup() {
             ;;
         vendor/lib*/libwvhidl.so)
             "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite.so" "libprotobuf-cpp-lite-v29.so" "${2}"
+            ;;
+        vendor/lib*/vendor.huawei.hardware.camera.camResource@1.0.so)
+            "${PATCHELF}" --add-needed "libhidlbase_shim.so" "${2}"
+            ;;
+        vendor/lib*/vendor.huawei.hardware.camera.camResource@1.1.so)
+            "${PATCHELF}" --add-needed "libhidlbase_shim.so" "${2}"
+            ;;
+        vendor/lib*/vendor.huawei.hardware.camera.cfgsvr@1.0.so)
+            "${PATCHELF}" --add-needed "libhidlbase_shim.so" "${2}"
+            ;;
+        vendor/lib*/vendor.huawei.hardware.camera.cfgsvr@1.1.so)
+            "${PATCHELF}" --add-needed "libhidlbase_shim.so" "${2}"
+            ;;
+        vendor/lib*/vendor.huawei.hardware.camera.factory@1.0.so)
+            "${PATCHELF}" --add-needed "libhidlbase_shim.so" "${2}"
+            ;;
+        vendor/lib*/vendor.huawei.hardware.hisiradio@1.0.so)
+            "${PATCHELF}" --add-needed "libhidlbase_shim.so" "${2}"
+            ;;
+        vendor/lib*/vendor.huawei.hardware.sensors@1.0.so)
+            "${PATCHELF}" --add-needed "libhidlbase_shim.so" "${2}"
+            ;;
+        vendor/lib*/vendor.huawei.hardware.libteec@2.0.so)
+            "${PATCHELF}" --add-needed "libhidlbase_shim.so" "${2}"
+            ;;
+        vendor/lib*/vendor.huawei.hardware.radio.chr@1.0.so)
+            "${PATCHELF}" --add-needed "libhidlbase_shim.so" "${2}"
+            ;;
+        vendor/lib*/vendor.huawei.hardware.radio.deprecated@1.0.so)
+            "${PATCHELF}" --add-needed "libhidlbase_shim.so" "${2}"
+            ;;
+        vendor/lib*/vendor.huawei.hardware.radio.ims@1.0.so)
+            "${PATCHELF}" --add-needed "libhidlbase_shim.so" "${2}"
+            ;;
+        vendor/lib*/vendor.huawei.hardware.radio@2.0.so)
+            "${PATCHELF}" --add-needed "libhidlbase_shim.so" "${2}"
+            ;;
+        vendor/lib*/vendor.huawei.hardware.radioenhance@1.0.so)
+            "${PATCHELF}" --add-needed "libhidlbase_shim.so" "${2}"
+            ;;
+        vendor/lib*/vendor.mediatek.hardware.camera.callbackclient@1.0.so)
+            "${PATCHELF}" --add-needed "libhidlbase_shim.so" "${2}"
+            ;;
+        vendor/lib*/vendor.mediatek.hardware.camera.callbackclient@1.1.so)
+            "${PATCHELF}" --add-needed "libhidlbase_shim.so" "${2}"
+            ;;
+        vendor/lib*/vendor.mediatek.hardware.camera.ccap@1.0.so)
+            "${PATCHELF}" --add-needed "libhidlbase_shim.so" "${2}"
+            ;;
+        vendor/lib*/vendor.mediatek.hardware.camera.lomoeffect@1.0.so)
+            "${PATCHELF}" --add-needed "libhidlbase_shim.so" "${2}"
+            ;;
+        vendor/lib*/vendor.mediatek.hardware.dfps@1.0.so)
+            "${PATCHELF}" --add-needed "libhidlbase_shim.so" "${2}"
+            ;;
+        vendor/lib*/vendor.mediatek.hardware.gnss@1.1.so)
+            "${PATCHELF}" --add-needed "libhidlbase_shim.so" "${2}"
+            ;;
+        vendor/lib*/vendor.mediatek.hardware.mms@1.0.so)
+            "${PATCHELF}" --add-needed "libhidlbase_shim.so" "${2}"
+            ;;
+        vendor/lib*/vendor.mediatek.hardware.mms@1.1.so)
+            "${PATCHELF}" --add-needed "libhidlbase_shim.so" "${2}"
+            ;;
+        vendor/lib*/vendor.mediatek.hardware.nvram@1.0.so)
+            "${PATCHELF}" --add-needed "libhidlbase_shim.so" "${2}"
+            ;;
+        vendor/lib*/vendor.mediatek.hardware.nvram@1.1.so)
+            "${PATCHELF}" --add-needed "libhidlbase_shim.so" "${2}"
+            ;;
+        vendor/lib*/vendor.mediatek.hardware.power@2.0.so)
+            "${PATCHELF}" --add-needed "libhidlbase_shim.so" "${2}"
+            ;;
+        vendor/lib*/vendor.mediatek.hardware.pq@2.0.so)
+            "${PATCHELF}" --add-needed "libhidlbase_shim.so" "${2}"
+            ;;
+        vendor/lib*/vendor.mediatek.hardware.pq@2.1.so)
+            "${PATCHELF}" --add-needed "libhidlbase_shim.so" "${2}"
+            ;;
+        vendor/lib*/vendor.mediatek.hardware.pq@2.2.so)
+            "${PATCHELF}" --add-needed "libhidlbase_shim.so" "${2}"
+            ;;
+        vendor/lib*/vendor.mediatek.hardware.radio_ex@1.0.so)
+            "${PATCHELF}" --add-needed "libhidlbase_shim.so" "${2}"
+            ;;
+        vendor/lib*/vendor.mediatek.hardware.radio_ex@1.1.so)
+            "${PATCHELF}" --add-needed "libhidlbase_shim.so" "${2}"
+            ;;
+        vendor/lib*/vendor.mediatek.hardware.radio_radar@1.0.so)
+            "${PATCHELF}" --add-needed "libhidlbase_shim.so" "${2}"
+            ;;
+        vendor/lib*/vendor.mediatek.hardware.videotelephony@1.0.so)
+            "${PATCHELF}" --add-needed "libhidlbase_shim.so" "${2}"
             ;;
     esac
 }
