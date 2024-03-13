@@ -60,6 +60,10 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+        vendor/lib*/hw/audio.primary.mt6761.so)
+            "${PATCHELF}" --replace-needed "libmedia_helper.so" "libmedia_helper-v28.so" "${2}"
+            "${PATCHELF}" --replace-needed "libxml2.so" "libxml2-v28.so" "${2}"
+            ;;
         vendor/lib*/hw/dfps.mt6761.so)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
             ;;
