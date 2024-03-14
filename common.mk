@@ -135,9 +135,15 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
+    android.hardware.power-service.huawei-libperfmgr
+
+PRODUCT_PACKAGES += \
     android.hardware.power@1.0.vendor \
     android.hardware.power@1.1.vendor \
     android.hardware.power@1.2.vendor
+
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/power/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
 # Radio
 PRODUCT_PACKAGES += \
@@ -176,7 +182,8 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/interfaces \
     hardware/google/pixel \
     hardware/mediatek \
-    hardware/huawei
+    hardware/huawei \
+    hardware/huawei/power-libperfmgr
 
 # Thermal
 PRODUCT_PACKAGES += \
