@@ -150,6 +150,7 @@ TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_huawei
 TARGET_RELEASETOOLS_EXTENSIONS := hardware/huawei/releasetools
 
 # SEPolicy
+include device/mediatek/sepolicy_vndr/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 
 # Vintf
